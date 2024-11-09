@@ -1,0 +1,20 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "dwu.public@gmail.com",
+                "Name": "Daniel Wutke"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Syncthing status monitor",
+        "Icon": "syncthing",
+        "Id": "io.github.dwu.syncthing-status",
+        "License": "MIT",
+        "Name": "Syncthing Status",
+        "Version": "0.1",
+        "Website": "https://github.com/dwu/syncthing-status"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
