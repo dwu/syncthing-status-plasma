@@ -26,10 +26,10 @@ Item {
     property var icons: ({
         "syncon": "state-sync-symbolic",
         "syncoff": "state-offline-symbolic",
-        "syncpaused": "state-pause-symbolic",
+        "syncpaused": "state-ok-symbolic",
         "syncalert": "state-error-symbolic",
-        "syncdownload": "state-download-symbolic",
-        "syncupload": "state-upload-symbolic",
+        "syncdownload": "state-sync-symbolic",
+        "syncupload": "state-sync-symbolic",
     })
 
     Kirigami.Icon {
