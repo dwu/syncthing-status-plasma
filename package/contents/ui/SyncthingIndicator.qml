@@ -15,6 +15,7 @@ Item {
 
     readonly property var syncthingApiBaseUrl: plasmoid.configuration.syncthingApiBaseUrl
     readonly property var syncthingApiKey: plasmoid.configuration.syncthingApiKey
+    readonly property var syncthingWebUrl: plasmoid.configuration.syncthingWebUrl
     readonly property var sharedFolders: plasmoid.configuration.sharedFolders
     readonly property var pollingInterval: plasmoid.configuration.pollingInterval
     property var syncthing: new St.Syncthing(plasmoid.configuration.syncthingApiBaseUrl,
@@ -51,16 +52,10 @@ Item {
     }
 
     function validateConfig() {
-        if (syncthingApiBaseUrl.length == 0) {
-            return false;
-        }
-        if (syncthingApiKey.length == 0) {
-            return false;s
-        }
-        if (sharedFolders.length == 0) {
-            return false;
-        }
-        return true;
+        return !(syncthingApiBaseUrl.length == 0 ||
+            syncthingApiKey.length == 0 ||
+            syncthingWebUrl.length == 0 ||
+            sharedFolders.length == 0);
     }
 
     function updateStatus() {

@@ -20,9 +20,10 @@ $ kpackagetool6 -t Plasma/Applet -r io.github.dwu.syncthing-status
 
 ## Configuration properties
 
+- **Syncthing Web URL:"** The URL for Syncthing's Web interface, typically `http://localhost:8384`
 - **Syncthing API Base URL:** The base URL for Syncthing's REST API, typically `http://localhost:8384/rest`.
 - **Syncthing API Key:** The API key. Can be found either in the "General" tab of the Web GUI's settings or in Syncthing's `config.xml` at xpath `/configuration/gui/apikey`.
-    - On Unix-like operating systems you can get the apikey e.g. via xmlstarlet: `xmlstarlet sel -t -v /configuration/gui/apikey ~/.local/state/syncthing/config.xml`.
+    - On Unix-like operating systems you can get the apikey e.g. via grep (`grep apikey ~/.local/state/syncthing/config.xml`) or xmlstarlet (`xmlstarlet sel -t -v /configuration/gui/apikey ~/.local/state/syncthing/config.xml`)
 - **Shared folders**: The folder IDs of the shared folders to monitor separated by comma. Can be found either in the "Folders" view of the Syncthing Web Gui or in Syncthing's `config.xml` at xpath `/configuration/folder/@id`.
     - On Unix-like operating systems you can get the shared folders e.g. via xmlstarlet: `xmlstarlet sel -t -v /configuration/folder/@id ~/.local/state/syncthing/config.xml`
 

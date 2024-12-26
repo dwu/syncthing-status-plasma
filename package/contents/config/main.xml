@@ -13,6 +13,10 @@
     <entry name="syncthingApiKey" type="String">
       <label>Syncthing API key</label>
     </entry>
+    <entry name="syncthingWebUrl" type="String">
+      <label>Syncthing Web Interface URL</label>
+      <default>http://localhost:8384</default>
+    </entry>
     <entry name="sharedFolders" type="String">
       <label>Syncthing Shared Folders</label>
     </entry>
